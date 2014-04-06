@@ -1,0 +1,132 @@
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+body {
+	margin: 0px;
+	font-size: 18px;
+}
+
+header {
+	background-color: #E0E5E8;
+	background-image: url('../img/top_view.jpg');
+}
+
+nav {
+	padding-left: 370px;
+	height: 50px;
+	background-color: #000;
+}
+
+nav ul {
+	padding-top: 12px;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	padding: 15px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+#hero {
+	position: relative;
+	padding: 50px;
+}
+
+#logo {
+	position: absolute;
+	top: 30px;
+
+}
+
+#hero-text {
+	height: 250px;
+	padding-top: 50px;
+	padding-left: 500px;
+}
+
+#hero-text h1 {
+	margin: 0px;
+	font-size: 3em;
+	color: #FFF;
+}
+
+#hero-text p {
+	font-size: 1.5em;
+	color: #FFF;
+	font-weight: bold;
+}
+
+/* Main content */
+
+#wrapper {
+	width: 900px;
+	margin: auto;
+	position: relative;
+}
+
+.tut-copy {
+	padding: 0px 40px;
+	float: left;
+	margin: 30px 0;
+	border-right: thin dotted black;
+}
+
+.more-info {
+	position: relative;
+	float: left;
+	padding-top: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#intro {
+	background-color: #E3ECFF;
+	clear: both;
+}
+
+#why  {
+	background-color: #E3E8CF;
+}
+
+#start
+
+#lingo
+
+
+/* Grid */
+
+.row {
+	width: 100%;
+}
+
+.row:before, .row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-4 {
+	width: 33.33%;
+}

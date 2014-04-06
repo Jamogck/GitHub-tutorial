@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GitHub 101</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+	<header>
+			<div id="logo">
+				<img src="img/octocat.png" alt="octocat">
+			</div>
+			<div id="hero-text">
+				<h1>GitHub 101</h1>
+					<p>Creating your first Git repository on GitHub.</p>
+			</div>
+		<nav id="main-nav">
+			<ul>
+				<li><a href="#intro">What is it?</a></li>
+				<li><a href="#why">Why bother with Git?</a></li>
+				<li><a href="#start">Setting Up</a></li>
+				<li><a href="#lingo">Git Lingo</a></li>
+				<li><a href="#">Your First Commit</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="wrapper">
+
+	<section class="row" id="intro">
+		<div class="col-8 tut-copy">
+			<h2>What is GitHub?</h2>
+			<p>GitHub is a tool which utilizes the popular version control system, Git.</p>
+			<p>Git is a version control system which enables developers to log a complete history of their projects in a repository for the following purposes:
+				<ul>
+					<li>Collaboration within a team</li>
+					<li>The ability to revert to previous versions</li>
+					<li>Sharing and utilizing open source code</li>
+				</ul></p>
+
+			<p>GitHub is essentially a network of Git repositories, hosted in a remote server (not your local machine).</p>
+		</div>
+
+		<div class="col-4 more-info">
+			<h3>More resources</h3>
+				<ul>
+					<li><a href="#">Resource</a></li>
+					<li><a href="#">Resource</a></li>
+				</ul>
+
+			<h3>Get Git Setup</h2>
+				<ol>
+					<li><a target="_blank" href="http://git-scm.com/downloads">Download Git</a></li>
+					<li>Create a <a target="_blank" href="https://github.com/">GitHub</a> account</li>
+				</ol>
+		</div>
+	</section>
+
+	<section class="row" id="why">
+		<div class="col-8 tut-copy">
+			<h2>Why bother with Git?</h2>
+			<p>Consider the following scenario.</p>
+			<p>You’ve been hired by a client to develop a brand new website.</p>
+			<p>First, you spend a few days creating an HTML prototype, to help you determine what the client wants.</p>
+			You write the code, make changes, and save the file to your disk. Maybe at some point you code a really cool feature you’d like to run by her. Unfortunately, she doesn’t really like it and asks to remove it.</p>
+			So you delete the feature and keep working. But then a couple of days later, she changes her mind and really does want that feature after all.</p>
+			But you already deleted it from the code.</p>
+			Uh oh.</p>
+			<p>At this point you have a few options:
+				<ul>
+					<li>Write it up again (definitely not ideal).</li>
+					<li>Maybe you can dig up the file from archived emails. Or even better – you saved the original code with its own filename like, prototype_v1.html.</li>
+				</ul></p>
+			<p>Great job. One way or another, you revived the requested feature. And you’ll save all subsequent changes with distinct filenames…just in case.</p>
+			<p>But, this was just the prototype with only a few files. When you get started in the real site, well, there will be a lot more files and versions of files to keep track of. Plus, many of the files relate to one another; meaning, a change in one of them may require you to change several or all of the files (like a change in the header’s navigation, for example).</p>
+			<p>Maybe you figure out a solution that works for you, on your computer, with filenames that make sense to you.</p>
+			<p>But your client just added another wrinkle. She hired another developer to help you out. You can’t just send him the files and work concurrently without stepping on each other’s toes. Plus, how will track the changes you both made to the same file? Comparing code would be a nightmare.
+			You get the idea.  There’s a real need for a tool that can help manage all of the file versions while also making it easy to collaborate with a team.</p>
+			<p>Well, that’s what GitHub does. You can imagine it’d be a necessary skillset in any kind of professional web development setting.</p>
+			<p>Let’s get familiar with it.</p>
+		</div>
+		<div class="col-4 more-info">
+			<h3>More resources</h3>
+			<ul>
+				<li><a href="#">Resource</a></li>
+				<li><a href="#">Resource</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="row" id="lingo">
+		<div class="col-8 tut-copy">
+			<h2>The Command Line and Basic GitHub Lingo</h2>
+			Git and GitHub introduce a distinct set of vocabulary that is essential to understanding the tool:
+			<dl>
+				<dt>Repository (or “Repo”)</dt>
+					<dd>A repository is where all your commits are logged on a given project. Create a repository from the command line with <code>git commit</code>.
+				<dt>Commit</dt>
+					<dd>'Commit' is different than 'saving'. A commit is essentially saying, "This is version is complete." By running the <code>git commit -m</code> command, your changes are, well, committed for this particular version of your project.</dd> 
+				<dt>Branch</dt>
+					<dd>Branches are used to develop features isolated from the master. When you're comfortable with them, you can merge them into the master.</dd>
+				<dt>Fork</dt>
+					<dd>To "Fork" a repository, means you're attempting to either contribute to, or use, someone else's project as your own.</dd>
+			</dl>
+		</div>
+		<div class="col-4 more-info">
+			<h3>More resources</h3>
+			<ul>
+				<li><a href="#">Resource</a></li>
+				<li><a href="#">Resource</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="row" id="commit">
+		<div class="col-8 tut-copy">
+			<h2>Create a New Repo</h2>
+				<p>The easiest way (for a console newb) to create a GitHub repository is right on your GitHub profile. Go there, and click "new".</p>
+				<img src="img/GitHub_profile_new-repo.jpg" alt="new repository">
+
+				<p>From there, you'll give it a name (something like "PHP tutorial"). Give it a short description, and click "create repository." Now your repository is ready for you. But how do you get your files there?</p>
+
+			<h3>Into the Console!</h3>
+				<p>Navigate to your project folder, via Command Line. To change directories, type <code>cd "directory"</code>. For me, I'll go to <code>cd desktop</code>.<p>
+				<p>From here, I'll go directly into my project folder by typing the relative path <code>cd webdev1/wk11</code>. If you type <code>ls</code>, your console should show all of your project files.</p>
+
+				<img src="img/git_directory.jpg" alt="Git directory">
+
+				<p>You can see, I have a zip folder with the GitHub branding elements, a css and img folder, and my index.html.<p>
+			<h3>Stage your files</h2>
+				<p>Now that we are in the right place, let's create a local repository for staging. Type in <code>git init</code> to initialize an empty repository in your project folder.<p>
+				<p>Let's create and add a README document so others can see what your repository is all about. Type <code>touch README.txt</code>. From there, I'll add some text by opening up <code>notepad README.txt</code> and saving it. Now, when I type <code>less README.txt</code> I can see my description.</p>
+					<img src="img/add_readme.jpg" alt="adding a readme doc">
+
+	</div>
+
+
+
+</body>
+</html>
