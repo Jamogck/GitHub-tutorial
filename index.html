@@ -131,8 +131,26 @@
 				<p>You can see, I have a zip folder with the GitHub branding elements, a css and img folder, and my index.html.<p>
 			<h3>Stage your files</h2>
 				<p>Now that we are in the right place, let's create a local repository for staging. Type in <code>git init</code> to initialize an empty repository in your project folder.<p>
-				<p>Let's create and add a README document so others can see what your repository is all about. Type <code>touch README.txt</code>. From there, I'll add some text by opening up <code>notepad README.txt</code> and saving it. Now, when I type <code>less README.txt</code> I can see my description.</p>
+				<p>Let's create and add a README document so others can see what your repository is all about. Type <code>touch README.txt</code>. From there, I'll add some text by opening up <code>notepad README.txt</code> and saving it. Now, when I type <code>less README.txt</code> I can see the contents of my README.txt.</p>
 					<img src="img/add_readme.jpg" alt="adding a readme doc">
+				<p>Let's commit README.txt, along with our other project files to our local, then remote (GitHub) repository.<p>
+					<ol>
+						<li><code>git add README.txt</code> will add the file to the staging area.</li>
+						<li><code>git status</code> is helpful to see what files are waiting to be committed. You should see your Readme file there.</li>
+						<li><code>git add css img index.html</code> to add my remaining project files to staging.</li>
+						<li><code>git commit -m "Added original project files"</code> to commit changes and add a little description.</li>
+					<img src="img/git_commit.jpg" alt="git commit">
+
+			<h3>Push to GitHub</h3>
+				<p>You now have a log of your current version in a local repository. Now let's push that to GitHub so the code can be shared and/or collaborated on.</p>
+				<p><code>git remote add origin https://github.com/username/project-name.git</code> will establish the remote repository you set up way back from your GitHub profile as the destination.</p>
+				<p>Type <code>git push</code> and you're almost there.</p>
+				<img src="img/git_push.jpg" alt="git push">
+				<p>The command line will prompt you to type your GitHub username and password to proceed.<p>
+				<p>Complete this step and refresh your GitHub repository. You should see all of your project files logged.<p>
+					<img src="img/git_repo.jpg" alt="git repo">
+				<h3>Congratulations!</h3>
+
 
 	</div>
 
