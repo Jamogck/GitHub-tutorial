@@ -17,13 +17,13 @@ header {
 }
 
 nav {
-	padding-left: 370px;
-	height: 50px;
+	padding-left: 300px;
+	height: 70px;
 	background-color: #000;
 }
 
 nav ul {
-	padding-top: 12px;
+	padding-top: 8px;
 }
 
 nav li {
@@ -34,6 +34,14 @@ nav li a {
 	padding: 15px;
 	color: #FFF;
 	text-decoration: none;
+}
+
+nav li a:hover {
+	border-bottom: dotted thin #FFF;
+}
+
+nav #follow {
+	padding-left: 70px;
 }
 
 h2 {
@@ -121,6 +129,24 @@ code {
 	background-color: #FFF;
 }
 
+footer {
+	height: 100px;
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+	padding-top: 25px;
+}
+
+footer a {
+	color: #FFF;
+	text-decoration: none;
+	border-bottom: dotted thin #FFF;
+}
+
 
 /* Grid */
 
@@ -135,10 +161,6 @@ code {
 
 .row:after {
 	clear: both;
-}
-
-.col-12 {
-	width: 100%;
 }
 
 .col-8 {
